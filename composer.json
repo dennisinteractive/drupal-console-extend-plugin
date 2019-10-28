@@ -21,5 +21,10 @@
     "prefer-stable": true,
     "autoload": {
         "psr-4": {"Drupal\\Console\\Composer\\Plugin\\": "src"}
+    },
+    "extra": {
+        "installer-paths": {
+            "vendor/{$vendor}/{$name}": ["type:drupal-console-library"]
+        }
     }
 }
